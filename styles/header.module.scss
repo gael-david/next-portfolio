@@ -1,0 +1,12 @@
+@use "./var";
+
+.navIcon {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.navButtons {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 2rem;
+}
