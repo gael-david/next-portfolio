@@ -76,6 +76,20 @@ main {
   text-align: center;
 }
 
+.container {
+  max-width: 100rem;
+  display: flex;
+  flex-direction: column;
+  gap: var.$largeSpace;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: var.$largeSpace;
+}
+
 .colorBlue {
   color: var.$colorBlue;
 }

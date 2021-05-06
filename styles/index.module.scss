@@ -1,39 +1,3 @@
 @use "./var";
 
-.latestPosts {
-  max-width: 100rem;
-  display: flex;
-  flex-direction: column;
-  gap: var.$largeSpace;
-}
 
-.grid {
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: var.$largeSpace;
-}
-
-.card {
-  padding: var.$mediumSpace;
-  border-radius: 2rem;
-  border: 0.2rem solid var.$colorLightGrey;
-  text-align: left;
-  box-shadow: rgb(0 0 0 / 21%) 0px 3px 100px 0px;
-  display: grid;
-  gap: var.$smallSpace;
-  align-content: flex-start;
-}
-
-.cardImage {
-  border-radius: var.$mediumSpace;
-  object-fit: cover;
-  width: 100%;
-  aspect-ratio: 13/9;
-}
-
-.cardDetails {
-  display: grid;
-  gap: var.$smallSpace;
-  padding: 1rem 0;
-}
