@@ -1,21 +1,36 @@
 import Link from "next/link";
-import ProfileImage from "../../components/ProfileImage";
 import Layout from "../../components/Layout";
-import Date from "../../components/Date";
+import Author from "../../components/Author";
+import styles from "../../styles/post.module.scss";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 
 export default function Post({ post }) {
   return (
     <Layout siteTitle={`${post.title} - Gaël David`}>
-      <h1>{post.title}</h1>
-      <Date dateString={post.date} />
-      <div dangerouslySetInnerHTML={{ __html: post.content }} />
-      <div>
-        <p>Author: Gaël David</p>
+      <div className={styles.postContainer}>
+        <header className={styles.postHeader}>
+          <h1>{post.title}</h1>
+          <Author post={post} />
+        </header>
+        <img
+          src={post.image}
+          height={150}
+          width={150}
+          alt="Post Image"
+          className={styles.postImage}
+        />
+        <div
+          dangerouslySetInnerHTML={{ __html: post.content }}
+          className={styles.postContent}
+        />
+        <Link href="/">
+          <a>
+            <p>
+              <span>⬅</span> Go back
+            </p>
+          </a>
+        </Link>
       </div>
-      <Link href="/">
-        <a>Back to the homepage</a>
-      </Link>
     </Layout>
   );
 }

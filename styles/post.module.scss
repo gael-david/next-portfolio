@@ -1,0 +1,51 @@
+@use "./var";
+
+.postContainer {
+  max-width: 80rem;
+  width: 100%;
+  text-align: left;
+  display: grid;
+  gap: var.$largeSpace;
+}
+
+.postHeader {
+  display: flex;
+  flex-direction: column;
+  gap: var.$smallSpace;
+}
+
+.postDetails {
+  display: flex;
+  align-items: center;
+  gap: var.$smallSpace;
+}
+
+.postAuthor {
+  height: 4rem;
+  width: 4rem;
+  padding: 0.5rem;
+  background: #4e3ff627;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.postAuthorImage {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.postImage {
+  width: 100%;
+  border-radius: 2rem;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.postContent {
+  text-align: left;
+  display: grid;
+  gap: var.$mediumSpace;
+  margin-bottom: 2.5rem;
+}

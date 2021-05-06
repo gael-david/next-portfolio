@@ -1,12 +1,35 @@
 @use "./var";
 
+.appHeader {
+  max-width: 130rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: var.$largeSpace;
+}
+
 .navIcon {
   font-weight: 700;
   font-size: 2.5rem;
 }
 
+.navBurger {
+  transform: rotate(90deg);
+}
+
 .navButtons {
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 2rem;
+  display: none;
+}
+
+@media (min-width: 650px) {
+  .navButtons {
+    display: grid;
+    grid-auto-flow: column;
+    gap: var.$mediumSpace;
+  }
+
+  .navBurger {
+    display: none;
+  }
 }

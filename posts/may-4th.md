@@ -1,6 +1,9 @@
 ---
 title: "Happy May 4th!"
-date: "2021-04-05"
+date: "2021-05-04"
+author: "Gaël David"
+authorImage: "/images/profile.png"
+image: "https://i.ytimg.com/vi/l51eBI2v-hY/maxresdefault.jpg"
 ---
 
 Happy **May 4th!**

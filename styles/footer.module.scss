@@ -1,0 +1,6 @@
+@use "./var";
+
+.footer {
+  background: var.$colorLightGrey;
+  padding: var.$largeSpace;
+}

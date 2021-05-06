@@ -1,35 +1,30 @@
 import Link from "next/link";
 import Layout from "../components/Layout";
-import ProfileImage from "../components/ProfileImage";
-import Date from "../components/Date";
+import Author from "../components/Author";
+import BlogCard from "../components/BlogCard";
 import styles from "../styles/index.module.scss";
 import { getSortedPostsData } from "../lib/posts";
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPosts }) {
   return (
     <Layout siteTitle="Blog - Gaël David">
-      <h1>Latest posts</h1>
-      <div className={styles.grid}>
-        {allPostsData.map(({ id, title, date }) => (
-          <>
-            <Link href={`/posts/${id}`}>
-              <a className={styles.card}>
-                <h3>{title}</h3>
-                <Date dateString={date} />
-              </a>
-            </Link>
-          </>
-        ))}
-      </div>
+      <section className={styles.latestPosts}>
+        <h1>Latest posts</h1>
+        <div className={styles.grid}>
+          {allPosts.map((post) => (
+            <BlogCard post={post} />
+          ))}
+        </div>
+      </section>
     </Layout>
   );
 }
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
+  const allPosts = getSortedPostsData();
   return {
     props: {
-      allPostsData,
+      allPosts,
     },
   };
 }

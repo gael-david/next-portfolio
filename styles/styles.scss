@@ -1,5 +1,12 @@
 @use "./var";
 
+#__next {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  width: 100%;
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -7,7 +14,6 @@ html {
   font-family: "Poppins", sans-serif;
   min-height: 100%;
   min-width: 100%;
-  margin-bottom: 2.5rem;
   color: black;
   scroll-behavior: smooth;
 }
@@ -16,29 +22,33 @@ body {
   width: 100%;
   height: 100%;
   background: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-size: 1.6rem;
-  color: #313f4d;
+  color: var.$colorBlack;
+}
+
+ul {
+  list-style: inside;
+}
+
+li {
+  margin-bottom: var.$smallSpace;
 }
 
 h1 {
   font-size: 3.5rem;
   font-weight: 700;
-  margin-bottom: 2.5rem;
 }
 
 h2 {
   font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 2.5rem;
+  margin-bottom: var.$mediumSpace;
 }
 
 h3 {
   font-size: 2.5rem;
   font-weight: 600;
-  margin-bottom: 2.5rem;
+  margin-bottom: var.$mediumSpace;
 }
 
 h4 {
@@ -46,18 +56,8 @@ h4 {
   font-weight: 600;
 }
 
-em {
-  color: #4d3ff6;
-  font-style: normal;
-}
-
 strong {
   font-weight: 600;
-}
-
-p {
-  font-weight: 300;
-  color: #425466ba;
 }
 
 a {
@@ -66,23 +66,24 @@ a {
   font-weight: 500;
 }
 
-header {
-  width: 95%;
-  max-width: 130rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2em;
-}
-
 main {
-  width: 95%;
-  max-width: 130rem;
-  padding: 2.5rem;
+  padding: var.$largeSpace;
+  gap: var.$largeSpace;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   text-align: center;
+}
+
+.colorBlue {
+  color: var.$colorBlue;
+}
+
+.colorGrey {
+  color: var.$colorGrey;
+}
+
+.bold {
+  font-weight: 500;
 }
