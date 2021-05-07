@@ -1,7 +1,7 @@
 @use "./var";
 
 .postContainer {
-  max-width: 80rem;
+  max-width: var.$maxWidth;
   width: 100%;
   text-align: left;
   display: grid;

@@ -1,0 +1,21 @@
+@use "./var";
+
+// .switchAxis {
+//   width: 6rem;
+//   height: 5rem;
+//   background: var(--heading-color);
+//   border-radius: 5rem;
+//   display: grid;
+//   align-content: center;
+// }
+
+.switchButton {
+  font-size: 2rem;
+  background: var.$colorGrey;
+  aspect-ratio: 1/1;
+  width: 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}

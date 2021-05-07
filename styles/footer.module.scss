@@ -1,6 +1,9 @@
 @use "./var";
 
 .footer {
-  background: var.$colorLightGrey;
+  width: 100%;
+  // background: var.$colorLightGrey;
   padding: var.$largeSpace;
+  display: grid;
+  justify-content: center;
 }

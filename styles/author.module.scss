@@ -6,11 +6,16 @@
   gap: var.$smallSpace;
 }
 
+.authorName {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
 .authorImageWrapper {
   height: 4rem;
   width: 4rem;
   padding: 0.5rem;
-  background: #4e3ff627;
+  background: var(--third-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -23,7 +28,7 @@
 }
 
 .authorDate {
-  color: var.$colorGrey;
+  color: var(--secondary-color);
   font-size: 1.4rem;
   font-weight: 300;
 }

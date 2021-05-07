@@ -1,11 +1,24 @@
-// COLORS
+// LIGHT MODE COLORS
 $colorBlue: #4d3ff6;
-$colorLightBlue: #4e3ff627;
+$colorLightBlue: #e2e0fc;
 $colorBlack: #313f4d;
-$colorGrey: #425466ba;
+$colorGrey: #75828f;
 $colorLightGrey: #42546621;
+
+// DARK MODE COLORS
 
 // PADDINGS / MARGINS / GAPS
 $smallSpace: 1rem;
 $mediumSpace: 2rem;
 $largeSpace: 3rem;
+
+// WIDTH
+$maxWidth: 90rem;
+
+.🌟 {
+  $bg: white !global;
+}
+
+.🌖 {
+  $bg: $colorBlack !global;
+}

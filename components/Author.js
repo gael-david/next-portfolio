@@ -8,7 +8,7 @@ const Author = ({ post }) => (
       <ProfileImage src={post.authorImage} className={styles.authorImage} />
     </div>
     <div>
-      <p className="colorBlue bold">{post.author}</p>
+      <p className={styles.authorName}>{post.author}</p>
       <Date dateString={post.date} className={styles.authorDate} />
     </div>
   </div>

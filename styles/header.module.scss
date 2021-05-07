@@ -1,12 +1,13 @@
 @use "./var";
 
 .appHeader {
-  max-width: 130rem;
+  max-width: var.$maxWidth;
+  width: 100%;
+  padding: var.$largeSpace;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: var.$largeSpace;
 }
 
 .navIcon {
