@@ -4,7 +4,8 @@
   --primary-color: #302ae6;
   --secondary-color: #e2e0fc;
   --third-color: #ebebeb;
-  --font-color: #424242;
+  --primary-font: #424242;
+  --secondary-font: #aaaaaa;
   --bg-color: #fff;
   --card-color: #fff;
   --heading-color: #292922;
@@ -18,7 +19,8 @@
   --primary-color: #9a97f3;
   --secondary-color: #e2e0fc;
   --third-color: #28282b;
-  --font-color: #dde3e9;
+  --primary-font: #dde3e9;
+  --secondary-font: #dde3e9;
   --bg-color: #000000;
   --card-color: #161618;
   --heading-color: #818cab;
@@ -38,7 +40,7 @@ html {
 body {
   font-size: 1.6rem;
   background: var(--bg-color);
-  color: var(--font-color);
+  color: var(--primary-font);
   width: 100%;
   height: 100%;
   display: flex;
