@@ -24,7 +24,6 @@ const DarkSwitch = () => {
     if (getTheme === dark) {
       setMode(dark);
       document.body.classList.replace(light, dark);
-      console.log(mode);
     } else {
       setMode(light);
       document.body.classList.replace(dark, light);
