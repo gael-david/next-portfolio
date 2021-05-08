@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 import styles from "../styles/switch.module.scss";
 
 const DarkSwitch = () => {
-  const [mode, setMode] = useState("🌟");
-  const light = "🌟";
+  const light = "🌞";
   const dark = "🌖";
 
-  const switchMode = (mode, setMode) => {
+  const [mode, setMode] = useState("initial");
+
+  const switchMode = () => {
     if (mode === light) {
       setMode(dark);
       localStorage.setItem("Theme", dark);
@@ -23,22 +24,30 @@ const DarkSwitch = () => {
     if (getTheme === dark) {
       setMode(dark);
       document.body.classList.replace(light, dark);
+      console.log(mode);
     } else {
       setMode(light);
       document.body.classList.replace(dark, light);
     }
   }, [mode]);
 
+  if (mode === "initial") return <div></div>;
   return (
     <div>
-      <div className={styles.switchAxis}>
-        <button
-          className={styles.switchButton}
-          onClick={() => switchMode(mode, setMode)}
+      <label className={styles.switch}>
+        <input type="checkbox" onClick={() => switchMode()} />
+        <div
+          className={`${styles.slider} ${mode === dark ? styles.sliderOn : ""}`}
         >
-          {mode}
-        </button>
-      </div>
+          <div
+            className={`${styles.sliderButton} ${
+              mode === dark ? styles.sliderButtonOn : ""
+            }`}
+          >
+            {mode}
+          </div>
+        </div>
+      </label>
     </div>
   );
 };

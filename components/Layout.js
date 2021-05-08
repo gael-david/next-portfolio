@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Header from "./Header";
 import Footer from "./Footer";
-import DarkSwitch from "./DarkSwitch";
+
 import React, { useState, useEffect } from "react";
 
 const Layout = ({ siteTitle, children }) => {
@@ -19,11 +19,11 @@ const Layout = ({ siteTitle, children }) => {
           href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"
         ></link>
         <title>{siteTitle || "Gaël David - Portfolio"}</title>
-        <body className="🌟" />
+        <body className="🌞" />
       </Head>
       <Header />
       <main>
-        <DarkSwitch />
+  
         {children}
       </main>
       <Footer />

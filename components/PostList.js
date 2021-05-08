@@ -5,7 +5,7 @@ const PostList = ({ postListTitle, allPosts }) => (
     <h1>{postListTitle}</h1>
     <div className="grid">
       {allPosts.map((post) => (
-        <PostCard post={post} />
+        <PostCard post={post} key={post.id} />
       ))}
     </div>
   </section>

@@ -1,14 +1,16 @@
 @use "./var";
 
 .card {
+  background: var(--card-color);
   padding: var.$mediumSpace;
   border-radius: 2rem;
-  border: 0.2rem solid var.$colorLightGrey;
+  // border: 0.2rem solid var.$colorLightGrey;
   text-align: left;
   box-shadow: rgb(0 0 0 / 21%) 0px 3px 100px 0px;
   display: grid;
   gap: var.$smallSpace;
   align-content: flex-start;
+  transition: 0.3s ease-in-out;
 }
 
 .cardImage {

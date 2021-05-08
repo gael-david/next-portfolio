@@ -1,21 +1,49 @@
 @use "./var";
 
-// .switchAxis {
-//   width: 6rem;
-//   height: 5rem;
-//   background: var(--heading-color);
-//   border-radius: 5rem;
-//   display: grid;
-//   align-content: center;
-// }
+/* The switch - the box around the slider */
+.switch {
+  display: flex;
+  width: 5rem;
+  height: 3rem;
+}
 
-.switchButton {
-  font-size: 2rem;
-  background: var.$colorGrey;
-  aspect-ratio: 1/1;
-  width: 4rem;
-  border-radius: 50%;
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
   cursor: pointer;
-  outline: none;
-  border: none;
+  border-radius: 3.4rem;
+  width: 100%;
+  background-color: rgb(235, 235, 235);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+}
+
+.sliderOn {
+  background-color: var(--card-color);
+  box-shadow: 0 0 1px var(--card-color);
+}
+
+.sliderButton {
+  border-radius: 50%;
+  font-size: 2rem;
+  margin-left: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.sliderButtonOn {
+  -webkit-transform: translateX(2rem);
+  -ms-transform: translateX(2rem);
+  transform: translateX(2rem);
 }

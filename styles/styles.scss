@@ -6,14 +6,17 @@
   --third-color: #e2e0fc;
   --font-color: #424242;
   --bg-color: #fff;
+  --card-color: #fff;
   --heading-color: #292922;
 }
 
 .🌖 {
   --primary-color: #9a97f3;
   --secondary-color: #818cab;
-  --font-color: #e1e1ff;
-  --bg-color: #161625;
+  --font-color: #d9e1e8;
+  --bg-color: #000000;
+  --card-color: #161618;
+  --card-gradient: linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
   --heading-color: #818cab;
 }
 
@@ -25,6 +28,7 @@ html {
   min-height: 100%;
   min-width: 100%;
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -35,6 +39,7 @@ body {
   height: 100%;
   display: flex;
   justify-content: center;
+  transition: 0.3s ease-in-out;
 }
 
 #__next {
