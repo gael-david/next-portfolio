@@ -19,8 +19,8 @@ const Header = () => (
         <Link href="/#projects">
           <a>Projects</a>
         </Link>
-        <Link href="/#technologies">
-          <a>Technologies</a>
+        <Link href="/blog">
+          <a>Blog</a>
         </Link>
       </div>
     </header>

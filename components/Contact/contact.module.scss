@@ -1,0 +1,27 @@
+@use "../../styles/var";
+
+.contactWrapper {
+  width: 100%;
+  max-width: 45rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--large-space);
+}
+
+.buttonWrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 20rem);
+  justify-content: center;
+  align-items: center;
+  gap: var(--medium-space);
+}
+
+.socialWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--medium-space);
+}

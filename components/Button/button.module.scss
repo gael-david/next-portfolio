@@ -1,0 +1,28 @@
+@use "../../styles/var";
+
+.button {
+  font-weight: 600;
+  min-height: 5rem;
+  padding: 1rem;
+  border-radius: 5rem;
+  white-space: nowrap;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease-out;
+}
+
+.button:hover {
+  transform: translateY(-5px);
+}
+
+.primaryButton {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+}
+
+.secondaryButton {
+  background: var(--third-color);
+}

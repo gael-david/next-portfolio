@@ -1,23 +1,23 @@
 @use "./var";
 
 .postContainer {
-  max-width: var.$maxWidth;
+  max-width: var(--max-width);
   width: 100%;
   text-align: left;
   display: grid;
-  gap: var.$largeSpace;
+  gap: var(--large-space);
 }
 
 .postHeader {
   display: flex;
   flex-direction: column;
-  gap: var.$smallSpace;
+  gap: var(--small-space);
 }
 
 .postDetails {
   display: flex;
   align-items: center;
-  gap: var.$smallSpace;
+  gap: var(--small-space);
 }
 
 .postAuthor {
@@ -46,6 +46,6 @@
 .postContent {
   text-align: left;
   display: grid;
-  gap: var.$mediumSpace;
+  gap: var(--medium-space);
   margin-bottom: 2.5rem;
 }

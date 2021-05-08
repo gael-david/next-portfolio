@@ -2,19 +2,19 @@
 
 .card {
   background: var(--card-color);
-  padding: var.$mediumSpace;
+  padding: var(--medium-space);
   border-radius: 2rem;
   // border: 0.2rem solid var.$colorLightGrey;
   text-align: left;
   box-shadow: rgb(0 0 0 / 21%) 0px 3px 100px 0px;
   display: grid;
-  gap: var.$smallSpace;
+  gap: var(--small-space);
   align-content: flex-start;
   transition: 0.3s ease-in-out;
 }
 
 .cardImage {
-  border-radius: var.$mediumSpace;
+  border-radius: var(--medium-space);
   object-fit: cover;
   width: 100%;
   aspect-ratio: 13/9;
@@ -22,6 +22,6 @@
 
 .cardDetails {
   display: grid;
-  gap: var.$smallSpace;
+  gap: var(--small-space);
   padding: 1rem 0;
 }

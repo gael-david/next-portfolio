@@ -1,0 +1,12 @@
+@use "../../styles/var";
+
+.socialIcon {
+  font-size: 4rem;
+  width: 4rem;
+  transition: transform 0.2s;
+}
+
+.socialIcon:hover {
+  transform: rotate(-15deg);
+  filter: brightness(80%);
+}

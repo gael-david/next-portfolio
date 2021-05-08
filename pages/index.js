@@ -1,20 +1,14 @@
 import Layout from "../components/Layout/Layout";
-import PostList from "../components/PostList/PostList";
-import { getSortedPostsData } from "../lib/posts";
+import Intro from "../components/Intro/Intro";
+import Contact from "../components/Contact/Contact";
 
-export default function Home({ allPosts }) {
+const Home = () => {
   return (
-    <Layout siteTitle="Blog - Gaël David">
-      <PostList postListTitle="Latest posts" allPosts={allPosts} />
+    <Layout siteTitle="Gaël David - Portfolio">
+      <Intro />
+      <Contact />
     </Layout>
   );
-}
+};
 
-export async function getStaticProps() {
-  const allPosts = getSortedPostsData();
-  return {
-    props: {
-      allPosts,
-    },
-  };
-}
+export default Home;

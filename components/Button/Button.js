@@ -1,22 +1,18 @@
-import React, { useState, useEffect } from "react";
+import styles from "./button.module.scss";
 
-const Button = () => {
-  const [count, setCount] = useState(0);
-
-  const switchCount = () => {
-    setCount(count + 1);
-    localStorage.setItem("Count", count + 1);
-  };
-
-  useEffect(() => {
-    const getNumber = Number(localStorage.getItem("Count"));
-    setCount(getNumber);
-  }, []);
-
+const Button = ({ content, icon, type, href }) => {
   return (
-    <div>
-      <button onClick={() => switchCount()}>{count}</button>
-    </div>
+    <>
+      <a
+        className={`${styles.button} ${
+          type === "primary" ? styles.primaryButton : styles.secondaryButton
+        }`}
+        href={href}
+      >
+        <i className={`fas fa-${ icon }`}></i>
+        {content}
+      </a>
+    </>
   );
 };
 

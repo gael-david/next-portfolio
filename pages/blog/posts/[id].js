@@ -1,8 +1,8 @@
 import Link from "next/link";
-import Layout from "../../components/Layout/Layout";
-import Author from "../../components/Author/Author";
-import styles from "../../styles/post.module.scss";
-import { getAllPostIds, getPostData } from "../../lib/posts";
+import Layout from "../../../components/Layout/Layout";
+import Author from "../../../components/Author/Author";
+import styles from "../../../styles/post.module.scss";
+import { getAllPostIds, getPostData } from "../../../lib/posts";
 
 export default function Post({ post }) {
   return (
@@ -23,7 +23,7 @@ export default function Post({ post }) {
           dangerouslySetInnerHTML={{ __html: post.content }}
           className={styles.postContent}
         />
-        <Link href="/">
+        <Link href="/blog">
           <a>
             <p>
               <span>⬅</span> Go back

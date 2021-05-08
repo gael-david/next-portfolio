@@ -1,0 +1,17 @@
+@use "../../styles/var";
+
+.wrapper {
+  max-width: calc(var(--max-width) / 2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--medium-space);
+}
+
+.wrapper img {
+  border-radius: 50%;
+  width: 40%;
+  padding: 2rem;
+  background: var(--secondary-color);
+  animation: animationperso 1.5s alternate infinite ease-in-out;
+}

@@ -3,7 +3,7 @@
 .footer {
   width: 100%;
   // background: var.$colorLightGrey;
-  padding: var.$largeSpace;
+  padding: var(--large-space);
   display: grid;
   justify-content: center;
 }

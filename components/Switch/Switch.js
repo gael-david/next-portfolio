@@ -35,9 +35,7 @@ const Switch = () => {
     <div>
       <label className={styles.switch}>
         <input type="checkbox" onClick={() => switchMode()} />
-        <div
-          className={`${styles.slider} ${mode === dark ? styles.sliderOn : ""}`}
-        >
+        <div className={styles.slider}>
           <div
             className={`${styles.sliderButton} ${
               mode === dark ? styles.sliderButtonOn : ""

@@ -19,16 +19,11 @@
   cursor: pointer;
   border-radius: 3.4rem;
   width: 100%;
-  background-color: rgb(235, 235, 235);
+  background-color: var(--third-color);
   -webkit-transition: 0.4s;
   transition: 0.4s;
   display: flex;
   align-items: center;
-}
-
-.sliderOn {
-  background-color: var(--card-color);
-  box-shadow: 0 0 1px var(--card-color);
 }
 
 .sliderButton {

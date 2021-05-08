@@ -1,9 +1,9 @@
 @use "../../styles/var";
 
 .appHeader {
-  max-width: var.$maxWidth;
+  max-width: var(--max-width);
   width: 100%;
-  padding: var.$largeSpace;
+  padding: var(--large-space);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -27,7 +27,7 @@
   .navButtons {
     display: grid;
     grid-auto-flow: column;
-    gap: var.$mediumSpace;
+    gap: var(--medium-space);
   }
 
   .navBurger {

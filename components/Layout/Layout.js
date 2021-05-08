@@ -18,6 +18,10 @@ const Layout = ({ siteTitle, children }) => {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"
         ></link>
+        <script
+          src="https://kit.fontawesome.com/fac3af6c8d.js"
+          crossorigin="anonymous"
+        ></script>
         <title>{siteTitle || "Gaël David - Portfolio"}</title>
         <body className="🌞" />
       </Head>

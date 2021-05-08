@@ -3,7 +3,7 @@
 .authorComponent {
   display: flex;
   align-items: center;
-  gap: var.$smallSpace;
+  gap: var(--small-space);
 }
 
 .authorName {
@@ -15,7 +15,7 @@
   height: 4rem;
   width: 4rem;
   padding: 0.5rem;
-  background: var(--third-color);
+  background: var(--secondary-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
