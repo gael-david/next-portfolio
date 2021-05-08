@@ -1,4 +1,4 @@
-import PostCard from "../components/PostCard";
+import PostCard from "../PostCard/PostCard";
 
 const PostList = ({ postListTitle, allPosts }) => (
   <section className="container">

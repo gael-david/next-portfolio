@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Author from "./Author";
-import styles from "../styles/card.module.scss";
+import Author from "../Author/Author";
+import styles from "./card.module.scss";
 
 const PostCard = ({ post }) => (
   <>

@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 import React, { useState, useEffect } from "react";
 
@@ -22,10 +22,7 @@ const Layout = ({ siteTitle, children }) => {
         <body className="🌞" />
       </Head>
       <Header />
-      <main>
-  
-        {children}
-      </main>
+      <main>{children}</main>
       <Footer />
     </>
   );

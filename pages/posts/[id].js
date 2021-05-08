@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Layout from "../../components/Layout";
-import Author from "../../components/Author";
+import Layout from "../../components/Layout/Layout";
+import Author from "../../components/Author/Author";
 import styles from "../../styles/post.module.scss";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 

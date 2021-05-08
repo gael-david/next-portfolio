@@ -1,5 +1,5 @@
-import Layout from "../components/Layout";
-import PostList from "../components/PostList";
+import Layout from "../components/Layout/Layout";
+import PostList from "../components/PostList/PostList";
 import { getSortedPostsData } from "../lib/posts";
 
 export default function Home({ allPosts }) {

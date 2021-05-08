@@ -1,7 +1,6 @@
-import styles from "../styles/header.module.scss";
+import styles from "./header.module.scss";
 import Link from "next/link";
-import DarkSwitch from "./DarkSwitch";
-import Button from "./Button";
+import DarkSwitch from "../Switch/Switch";
 
 const Header = () => (
   <>

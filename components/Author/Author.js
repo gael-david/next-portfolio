@@ -1,6 +1,6 @@
-import ProfileImage from "./ProfileImage";
-import Date from "./Date";
-import styles from "../styles/author.module.scss";
+import ProfileImage from "../ProfileImage/ProfileImage";
+import Date from "../Date/Date";
+import styles from "./author.module.scss";
 
 const Author = ({ post }) => (
   <div className={styles.authorComponent}>

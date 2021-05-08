@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import styles from "../styles/switch.module.scss";
+import styles from "./switch.module.scss";
 
-const DarkSwitch = () => {
+const Switch = () => {
   const light = "🌞";
   const dark = "🌖";
 
@@ -51,4 +51,4 @@ const DarkSwitch = () => {
   );
 };
 
-export default DarkSwitch;
+export default Switch;
