@@ -1,11 +1,15 @@
 import Layout from "../../components/Layout/Layout";
-import PostList from "../../components/PostList/PostList";
+import GridList from "../../components/GridList/GridList";
 import { getSortedPostsData } from "../../lib/posts";
 
 export default function Blog({ allPosts }) {
   return (
     <Layout siteTitle="Blog - Gaël David">
-      <PostList postListTitle="Latest posts" allPosts={allPosts} />
+      <GridList
+        listTitle="Latest posts"
+        allContent={allPosts}
+        url="blog/posts/"
+      />
     </Layout>
   );
 }

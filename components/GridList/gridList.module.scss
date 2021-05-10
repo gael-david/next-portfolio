@@ -1,0 +1,12 @@
+@use "../../styles/var";
+
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: var(--large-space);
+}
+
+.gridFull {
+  grid-template-columns: auto;
+}

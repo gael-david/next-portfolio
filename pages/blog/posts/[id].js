@@ -4,23 +4,23 @@ import Author from "../../../components/Author/Author";
 import styles from "../../../styles/post.module.scss";
 import { getAllPostIds, getPostData } from "../../../lib/posts";
 
-export default function Post({ post }) {
+export default function Post({ content }) {
   return (
-    <Layout siteTitle={`${post.title} - Gaël David`}>
+    <Layout siteTitle={`${content.title} - Gaël David`}>
       <div className={styles.postContainer}>
         <header className={styles.postHeader}>
-          <h1>{post.title}</h1>
-          <Author post={post} />
+          <h1>{content.title}</h1>
+          <Author content={content} />
         </header>
         <img
-          src={post.image}
+          src={content.image}
           height={150}
           width={150}
           alt="Post Image"
           className={styles.postImage}
         />
         <div
-          dangerouslySetInnerHTML={{ __html: post.content }}
+          dangerouslySetInnerHTML={{ __html: content.content }}
           className={styles.postContent}
         />
         <Link href="/blog">
@@ -44,11 +44,11 @@ export const getStaticPaths = () => {
 };
 
 export const getStaticProps = async ({ params }) => {
-  const post = await getPostData(params.id);
+  const content = await getPostData(params.id);
 
   return {
     props: {
-      post,
+      content,
     },
   };
 };
