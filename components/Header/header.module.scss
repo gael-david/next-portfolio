@@ -8,6 +8,15 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: var(--small-space);
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--medium-space);
 }
 
 .navIcon {

@@ -10,18 +10,20 @@ const Header = () => (
           Gaël <span className="colorBlue">David</span>
         </a>
       </Link>
-      <DarkSwitch />
-      <div className={styles.navBurger}>|||</div>
-      <div className={styles.navButtons}>
-        <Link href="/bucket/CV_G_David.pdf" target="_blank">
-          <a className={styles.resumeNav}>Resume</a>
-        </Link>
-        <Link href="/#projects">
-          <a>Projects</a>
-        </Link>
-        <Link href="/blog">
-          <a>Blog</a>
-        </Link>
+      <div className={styles.navBar}>
+        <DarkSwitch />
+        <div className={styles.navButtons}>
+          <Link href="/bucket/CV_Developer_G_David.pdf" target="_blank">
+            <a className={styles.resumeNav}>Resume</a>
+          </Link>
+          <Link href="/#projects">
+            <a>Projects</a>
+          </Link>
+          <Link href="/blog">
+            <a>Blog</a>
+          </Link>
+        </div>
+        <div className={styles.navBurger}>|||</div>
       </div>
     </header>
   </>

@@ -13,19 +13,14 @@
 }
 
 .card:hover {
-  box-shadow: rgb(0 0 0 / 21%) 0px 3px 100px 0px;
-  transform: translateY(-1rem);
+  box-shadow: var(--secondary-color) -10px 10px 0px 0px;
+  transform: translateY(-1rem) translateX(1rem);
 }
 
 .verticalCard {
   display: flex;
   align-items: flex-start;
   gap: 2rem;
-
-  &:hover {
-    box-shadow: var(--secondary-color) -10px 10px 0px 0px;
-    transform: translateY(-1rem) translateX(1rem);
-  }
 
   .cardImage {
     width: 15rem;

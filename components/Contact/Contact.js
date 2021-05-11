@@ -14,8 +14,18 @@ const Contact = () => {
         <Social media="twitter" href="https://twitter.com/gaeldavid44" />
       </div>
       <div className={styles.buttonWrapper}>
-        <Button type="primary" content="Download CV" icon={"arrow-down"} />
-        <Button type="secondary" content="Contact" icon={"paper-plane"} />
+        <Button
+          href="/bucket/CV_Developer_G_David.pdf"
+          type="primary"
+          content="Download CV"
+          icon={"arrow-down"}
+        />
+        <Button
+          href="mailto:gaelcdavid@gmail.com"
+          type="secondary"
+          content="Contact"
+          icon={"paper-plane"}
+        />
       </div>
     </div>
   );
