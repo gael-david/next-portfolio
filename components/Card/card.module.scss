@@ -58,7 +58,7 @@
 
 @media (max-width: 500px) {
   .verticalCard {
-    display: grid;
+    flex-direction: column;
 
     .cardImage {
       width: 100%;
