@@ -1,6 +1,6 @@
 ## Description 🧑‍💻
 
-A complete spring overhaul of my portfolio website, showcasing my latest projects and my future tech/film-related blog posts x
+A complete spring overhaul of my portfolio website, showcasing my latest projects and my future tech/film-related blog posts.
 
 ## Stack 🍱
 
