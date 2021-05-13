@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import SEO from "../SEO/SEO";
 
 import React, { useState, useEffect } from "react";
 
@@ -22,7 +23,8 @@ const Layout = ({ siteTitle, children }) => {
           src="https://kit.fontawesome.com/fac3af6c8d.js"
           crossorigin="anonymous"
         ></script>
-        <title>{siteTitle || "Gaël David - Portfolio"}</title>
+        <SEO />
+        <title>{siteTitle || "Gaël David"}</title>
         <body className="🌞" />
       </Head>
       <Header />

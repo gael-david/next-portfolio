@@ -16,9 +16,6 @@ const Header = () => (
           <Link href="/bucket/CV_Developer_G_David.pdf" target="_blank">
             <a className={styles.resumeNav}>Resume</a>
           </Link>
-          <Link href="/#projects">
-            <a>Projects</a>
-          </Link>
           <Link href="/blog">
             <a>Blog</a>
           </Link>
