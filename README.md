@@ -1,1 +1,15 @@
-This is my personal blog, made with Next.js
+## Description 🧑‍💻
+
+A complete spring overhaul of my portfolio website, showcasing my latest projects and my future tech/film-related blog posts x
+
+## Stack 🍱
+
+**Built with React, Next.js, Markdown and Sass. Deployed with Vercel.**
+
+The goal was to have a blazing-fast interactive website, and Next.js and its static generator was the perfect fit! 
+
+I wanted to have the easiest existing solution for writing and publishing blog posts. This led me to implement a markdown-based solution, where the posts would be directly written in a dedicated folder in the project and then fetched and displayed with React and its libray **remark**.
+
+## Link ⚡️
+
+Visit this portfolio/blog here: www.gaeldavid.fr
