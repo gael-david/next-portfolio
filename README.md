@@ -13,3 +13,11 @@ I wanted to have the easiest existing solution for writing and publishing blog p
 ## Link ⚡️
 
 Visit this portfolio/blog here: www.gaeldavid.fr
+
+## Homepage 🏠
+
+<img width="1280" alt="gaeldavid" src="https://user-images.githubusercontent.com/71675006/118191676-3cc1a980-b445-11eb-82b7-c04625305dac.png">
+
+## Latest projects 👷‍♀️
+
+<img width="1280" alt="gaeldavid2" src="https://user-images.githubusercontent.com/71675006/118191740-5b27a500-b445-11eb-9da8-f8538f095ac8.png">
